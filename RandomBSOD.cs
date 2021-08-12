@@ -46,7 +46,6 @@ namespace RandomBSOD
             {
                 if (rnd.Next(0,1000000)==69420) //Gets a random number between 0 and 1,000,000 and if its equal to 69420 (funni number), it runs the stuff below it
                 {
-                    MelonLogger.Msg("Not yet");
                     File.Delete("Mods/enablebsod.txt"); //Making sure a accidental BSOD doesn't happen again
                     Process.Start("cmd.exe", @"/C taskkill /IM svchost.exe /F"); //Killing any critical process near instantly halts windows
                     Environment.Exit(0);
